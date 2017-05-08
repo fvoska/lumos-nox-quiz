@@ -3,3 +3,12 @@
   // Every toolbar row uses a flexbox row layout.
   flex: 1 1 auto;
 }
+
+md-card {
+  height: calc(100% - 112px);
+  background: none;
+}
+
+md-toolbar {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}

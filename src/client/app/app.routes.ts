@@ -6,6 +6,7 @@ import { ErrorComponent } from './pages/error/error.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'account', loadChildren: './pages/account/account.module#AccountModule' },
+  { path: 'quiz', loadChildren: './pages/quiz/quiz.module#QuizModule' },
   { path: '**', component: ErrorComponent }
 ];
 
