@@ -1,5 +1,9 @@
 @import '~app/styles/colors';
 
+:host {
+  font-family: 'Kaushan Script', cursive;
+}
+
 .questions-grid {
   display: grid;
   height: 100%;
