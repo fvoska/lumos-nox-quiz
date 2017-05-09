@@ -1,0 +1,20 @@
+@import '~app/styles/colors';
+
+.questions-grid {
+  display: grid;
+  height: 100%;
+  width: calc(100% - 200px);
+  margin: auto;
+  color: $fireflyFull;
+
+  .question-group {
+    margin: 10px;
+    text-align: center;
+
+    .group-header {
+      line-height: 50px;
+      font-size: 24px;
+      padding: 10px;
+    }
+  }
+}

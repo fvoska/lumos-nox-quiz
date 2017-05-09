@@ -1,3 +1,4 @@
+import { BodyBackgroundChangerService } from './services/body-background-changer.service';
 import { HomeComponent } from './pages/home/home.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,6 +10,8 @@ import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
+
+import { QuestionsService } from 'app/services/questions.service';
 
 import { routing } from './app.routes';
 
@@ -26,7 +29,12 @@ import { routing } from './app.routes';
     BrowserAnimationsModule,
     routing
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    QuestionsService,
+    BodyBackgroundChangerService
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }

@@ -1,10 +1,8 @@
 <div class="questions-grid" [style.grid-template-columns]="calculateColumns()">
   <div class="question-group" *ngFor="let group of questionGroupsKeys">
     <div class="group-header">{{ group }}</div>
-    <div class="question" [style.height]="calculateHeigth()" *ngFor="let question of questionGroups[group]">
-      <div class="question-number">
-        {{ question.questionId }}
-      </div>
+    <div [style.height]="calculateHeigth()" *ngFor="let question of questionGroups[group]">
+      <quiz-category-item [question]="question"></quiz-category-item>
     </div>
   </div>
 </div>
