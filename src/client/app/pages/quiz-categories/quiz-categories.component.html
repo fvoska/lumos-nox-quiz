@@ -1,8 +1,18 @@
 <div class="questions-grid" [style.grid-template-columns]="calculateColumns()">
   <div class="question-group" *ngFor="let group of questionGroupsKeys">
-    <div class="group-header">{{ group }}</div>
-    <div [style.height]="calculateHeigth()" *ngFor="let question of questionGroups[group]">
-      <quiz-category-item [question]="question"></quiz-category-item>
+    <div class="group-header">
+      <img id="img-{{ group }}" class="group-header-img" src="assets/categories/{{ group }}.jpg">
+    </div>
+    <div class="group-questions">
+      <div [style.height]="calculateHeigth()" *ngFor="let question of questionGroups[group]">
+        <quiz-category-item
+          id="q{{ question.id }}"
+          (click)="toggleDone($event, question)"
+          (openQuestion)="openQuestion($event)"
+          [question]="question"
+          tabindex="1">
+        </quiz-category-item>
+      </div>
     </div>
   </div>
 </div>

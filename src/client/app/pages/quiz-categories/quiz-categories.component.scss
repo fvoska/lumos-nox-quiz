@@ -7,7 +7,7 @@
 .questions-grid {
   display: grid;
   height: 100%;
-  width: calc(100% - 200px);
+  width: calc(100% - 400px);
   margin: auto;
   color: $fireflyDark;
 
@@ -19,6 +19,44 @@
       line-height: 50px;
       font-size: 24px;
       padding: 10px;
+
+      .group-header-img {
+        z-index: 30;
+        position: absolute;
+        top: 10px;
+        margin-left: -50px;
+        height: auto;
+        width: 100px;
+        transition: all 250ms ease-in-out;
+
+        &:hover {
+          z-index: 31;
+          position: absolute;
+          transition: all 125ms ease-in-out;
+          transform: translateY(calc(25vh)) scale(5);
+          box-shadow: 0 0 100px black;
+        }
+      }
+
+      .img-hover {
+        z-index: 31;
+        position: absolute;
+        top: 0;
+        left: calc(50% - (50vh) + 80px);
+        box-shadow: 0 0 100px black;
+        height: 100%;
+        width: auto;
+        pointer-events: none;
+      }
+    }
+
+    .group-questions {
+      margin-top: 100px;
+      height: calc(100% - 100px);
     }
   }
+}
+
+.question-answered {
+  opacity: 0;
 }

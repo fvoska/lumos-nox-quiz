@@ -1,11 +1,11 @@
 @import '~app/styles/colors';
 
 :host {
-  width: 100%;
+  width: 100px;
   height: 100%;
-  margin: 20px 0;
   color: black;
   position: relative;
+  margin: 10px auto;
   background-color: $fireflyTransparent;
   transition: all 250ms ease-in-out;
   transform: scale(1);
