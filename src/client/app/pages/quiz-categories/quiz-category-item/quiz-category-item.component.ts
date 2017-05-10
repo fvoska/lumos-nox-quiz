@@ -10,7 +10,9 @@ export class QuizCategoryItemComponent {
   @Input() question: Question;
   @Output() openQuestion: EventEmitter<Question> = new EventEmitter<Question>();
 
-  public onClicked(): void {
-    this.openQuestion.emit(this.question);
+  public onClicked(event: MouseEvent): void {
+    if (!event.altKey) {
+      this.openQuestion.emit(this.question);
+    }
   }
 }

@@ -1,20 +1,13 @@
 import { Injectable } from '@angular/core';
 
 import { Question } from 'app/interfaces/question.interface';
+import { Http, Response } from '@angular/http';
+import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class QuestionsService {
-  public getQuestions(numQuestions: number = 30, numCategories: number = 6): Array<Question> {
-    let questions: Array<Question> = [];
-
-    for (let i: number = 0; i < numQuestions; i++) {
-      let category: number = Math.floor(i % numCategories);
-      questions.push({
-        id: i.toString(),
-        label: (Math.floor(i / numCategories) + 1).toString(),
-        category: (category + 1).toString()
-      });
-    }
-    return questions;
+  constructor(private http: Http) {}
+  public getJeopardyQuestions(numQuestions: number = 30, numCategories: number = 6): Observable<Array<Question>> {
+    return this.http.get('assets/questions.jeopardy.json').map((res: Response) => res.json().questions);
   }
 }

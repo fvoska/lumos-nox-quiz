@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 
 import { QuizCategoriesComponent } from './quiz-categories.component';
 import { QuizCategoryItemModule } from './quiz-category-item/quiz-category-item.module';
+import { QuestionPopupModule } from './question-popup/question-popup.module';
 
 import { routing } from './quiz-categories.routes';
 
@@ -12,6 +13,7 @@ import { routing } from './quiz-categories.routes';
     CommonModule,
     PipesModule,
     QuizCategoryItemModule,
+    QuestionPopupModule,
     routing
   ],
   declarations: [

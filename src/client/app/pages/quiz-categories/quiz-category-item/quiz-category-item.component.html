@@ -1,3 +1,5 @@
-<div (click)="onClicked()" class="question-number">
-  {{ question.label }}
+<div (click)="onClicked($event)" class="question-container">
+  <div class="question-label">
+    {{ question.label }}
+  </div>
 </div>

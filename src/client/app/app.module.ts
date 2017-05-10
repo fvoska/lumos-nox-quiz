@@ -1,6 +1,3 @@
-import { BodyBackgroundChangerService } from './services/body-background-changer.service';
-import { HomeComponent } from './pages/home/home.component';
-import { ErrorComponent } from './pages/error/error.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -10,8 +7,13 @@ import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ErrorComponent } from './pages/error/error.component';
+
+import { BodyBackgroundChangerService } from './services/body-background-changer.service';
 
 import { QuestionsService } from 'app/services/questions.service';
+import { QuestionsMockService } from 'app/services/questions.mock.service';
 
 import { routing } from './app.routes';
 
@@ -30,7 +32,7 @@ import { routing } from './app.routes';
     routing
   ],
   providers: [
-    QuestionsService,
+    { provide: QuestionsService, useClass: QuestionsService },
     BodyBackgroundChangerService
   ],
   bootstrap: [

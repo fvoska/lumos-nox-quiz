@@ -7,7 +7,7 @@
       <div [style.height]="calculateHeigth()" *ngFor="let question of questionGroups[group]">
         <quiz-category-item
           id="q{{ question.id }}"
-          (click)="toggleDone($event, question)"
+          (click)="altClick($event, question)"
           (openQuestion)="openQuestion($event)"
           [question]="question"
           tabindex="1">
@@ -16,3 +16,4 @@
     </div>
   </div>
 </div>
+<question-popup *ngIf="showQuestion" [@popupAnimation]="show" [question]="showQuestion" (closeQuestion)="onQuestionClose($event)"></question-popup>
