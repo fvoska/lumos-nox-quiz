@@ -4,12 +4,19 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
     "build": "ng build",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "postinstall": "ng build --aot -prod",
+    "start": "node src/server/server.js"
+  },
+  "engines": {
+    "node": "6.9.2",
+    "npm": "3.10.9"
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "1.0.0",
+    "@angular/compiler-cli": "^4.0.0",
     "@angular/animations": "^4.0.2",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
@@ -26,8 +33,6 @@
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@angular/cli": "1.0.0",
-    "@angular/compiler-cli": "^4.0.0",
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
     "codelyzer": "~2.0.0",
