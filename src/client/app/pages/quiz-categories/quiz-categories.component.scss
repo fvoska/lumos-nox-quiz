@@ -7,7 +7,8 @@
 .questions-grid {
   display: grid;
   height: 100%;
-  width: calc(100% - 300px);
+  width: 80%;
+  min-width: 600px;
   margin: auto;
   color: $fireflyDark;
 
@@ -33,7 +34,7 @@
           z-index: 31;
           position: absolute;
           transition: all 125ms ease-in-out;
-          transform: translateY(calc(25vh)) scale(5);
+          transform: translateY(calc(20vh)) scale(4);
           box-shadow: 0 0 100px black;
         }
       }

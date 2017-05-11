@@ -1,2 +1,3 @@
-{{ question?.text || 'Question' }}
+<div class="question" [@revealAnimation]="!showAnswer" *ngIf="!showAnswer" [innerHTML]="question?.text">Question</div>
+<div class="answer" [@revealAnimation]="showAnswer" *ngIf="showAnswer" [innerHTML]="question?.answer">answer</div>
 <div class="exit" (click)="exitQuestion($event)">X</div>

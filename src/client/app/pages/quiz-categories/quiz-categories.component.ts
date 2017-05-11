@@ -1,9 +1,10 @@
-import { Component, OnInit, trigger, transition, style, animate } from '@angular/core';
+import { Component, OnInit, trigger, transition, style, animate, HostListener } from '@angular/core';
 
 import { Question } from 'app/interfaces/question.interface';
 import { GroupByPipe } from 'app/pipes/group-by/group-by.pipe';
 import { QuestionsService } from 'app/services/questions.service';
 import { BodyBackgroundChangerService } from 'app/services/body-background-changer.service';
+  import { KeyCodes } from 'app/enums/keycodes.enum';
 
 @Component({
   selector: 'quiz-categories',
@@ -44,23 +45,6 @@ export class QuizCategoriesComponent implements OnInit {
       this.questionGroupsKeys = Object.keys(this.questionGroups);
     });
     this.backgroundChanger.changeBackground('pergament');
-    document.onkeydown = (ev: KeyboardEvent) => {
-      if (ev.keyCode === 37) {
-        if (this.currentImageShown > 0) {
-          this.showImage(this.currentImageShown - 1);
-        }
-      } else if (ev.keyCode === 39) {
-        if (this.currentImageShown <= this.questionGroupsKeys.length) {
-          this.showImage(this.currentImageShown + 1);
-        }
-      } else if (ev.keyCode - 48 >= 0 && ev.keyCode - 48 <= Math.min(this.questionGroupsKeys.length, 9)) {
-        if (ev.keyCode - 48 === this.currentImageShown) {
-          this.showImage(0);
-        } else {
-          this.showImage(ev.keyCode - 48);
-        }
-      }
-    };
   }
 
   public showImage(imgToShow: number): void {
@@ -125,5 +109,25 @@ export class QuizCategoriesComponent implements OnInit {
       }
     });
     return maxQuestionsInGroup;
+  }
+
+  @HostListener('document:keydown', ['$event'])
+  // tslint:disable-next-line:no-unused-variable
+  private listQuestions(ev: KeyboardEvent): void {
+    if (ev.keyCode === KeyCodes.ARROW_LEFT) {
+      if (this.currentImageShown > 0) {
+        this.showImage(this.currentImageShown - 1);
+      }
+    } else if (ev.keyCode === KeyCodes.ARROW_RIGHT) {
+      if (this.currentImageShown <= this.questionGroupsKeys.length) {
+        this.showImage(this.currentImageShown + 1);
+      }
+    } else if (ev.keyCode - KeyCodes.NUMBERS_START >= 0 && ev.keyCode - KeyCodes.NUMBERS_START <= Math.min(this.questionGroupsKeys.length, 9)) {
+      if (ev.keyCode - KeyCodes.NUMBERS_START === this.currentImageShown) {
+        this.showImage(0);
+      } else {
+        this.showImage(ev.keyCode - KeyCodes.NUMBERS_START);
+      }
+    }
   }
 }

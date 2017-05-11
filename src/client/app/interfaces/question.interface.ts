@@ -3,5 +3,6 @@ export interface Question {
   label: string;
   category: string;
   text: string;
+  answer: string;
   done: boolean;
 };

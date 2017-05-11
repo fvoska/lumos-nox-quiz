@@ -15,6 +15,7 @@ export class QuestionsMockService {
         label: ((Math.floor(i / numCategories) + 1) * 100).toString(),
         category: (category + 1).toString(),
         text: 'Question ' + i,
+        answer: 'Answer ' + i,
         done: false
       });
     }
