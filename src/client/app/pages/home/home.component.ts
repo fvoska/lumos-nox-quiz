@@ -1,4 +1,4 @@
-import { BodyBackgroundChangerService } from './../../services/body-background-changer.service';
+import { BodyBackgroundChangerService } from 'app/services/body-background-changer.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,11 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
   constructor(private backgroundChanger: BodyBackgroundChangerService) { }
 
   ngOnInit(): void {
     this.backgroundChanger.changeBackground('stars');
   }
-
 }

@@ -1,0 +1,12 @@
+@import '~app/styles/colors';
+
+:host {
+  color: $fireflyAccent;
+}
+
+.slides-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
