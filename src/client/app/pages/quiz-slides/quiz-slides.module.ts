@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { QuizSlidesComponent } from './quiz-slides.component';
 
 import { routing } from './quiz-slides.routes';
+import { SlideComponent } from './slide/slide.component';
 
 @NgModule({
   imports: [
@@ -10,7 +11,8 @@ import { routing } from './quiz-slides.routes';
     routing
   ],
   declarations: [
-    QuizSlidesComponent
+    QuizSlidesComponent,
+    SlideComponent
   ]
 })
 export class QuizSlidesModule { }

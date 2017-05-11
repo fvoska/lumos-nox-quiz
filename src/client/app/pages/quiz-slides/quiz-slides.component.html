@@ -1,5 +1,7 @@
 <div class="slides-container">
+  <div class="prev" (click)="prevQuestion()">&lt;</div>
   <div class="slide">
-    SLIDES
+    <slide [question]="question"></slide>
   </div>
+  <div class="next" (click)="nextQuestion()">&gt;</div>
 </div>

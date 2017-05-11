@@ -1,12 +1,33 @@
 @import '~app/styles/colors';
 
 :host {
+  font-family: 'Kaushan Script', cursive;
   color: $fireflyAccent;
+  text-align: center;
+}
+
+.prev, .next {
+  font-size: 128px;
+  cursor: pointer;
+}
+
+.prev {
+  text-align: left;
+}
+
+.slide {
+  font-size: 64px;
+  text-shadow: 0 0 100px $fireflyAccent;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .slides-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  height: 100%;
 }
