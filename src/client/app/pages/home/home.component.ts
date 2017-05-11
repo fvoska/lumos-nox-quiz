@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
 
   constructor(private backgroundChanger: BodyBackgroundChangerService) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.backgroundChanger.changeBackground('stars');
   }
 

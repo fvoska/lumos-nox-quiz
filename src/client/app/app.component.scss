@@ -1,3 +1,5 @@
+@import '~app/styles/colors';
+
 .example-fill-remaining-space {
   // This fills the remaining space, by using flexbox. 
   // Every toolbar row uses a flexbox row layout.
@@ -7,9 +9,19 @@
 md-card {
   height: calc(100% - 112px);
   background: none;
+  box-shadow: none !important;
 }
 
 md-toolbar {
   background-color: rgba(0, 0, 0, 0.5) !important;
   font-family: 'Kaushan Script', cursive !important;
+}
+
+.nav-links {
+  a {
+    margin-right: 1em;
+    &.active {
+      text-decoration: underline;
+    }
+  }
 }

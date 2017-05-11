@@ -5,7 +5,8 @@ import { ErrorComponent } from './pages/error/error.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'quiz-categories', loadChildren: './pages/quiz-categories/quiz-categories.module#QuizCategoriesModule' },
+  { path: 'jeopardy', loadChildren: './pages/quiz-categories/quiz-categories.module#QuizCategoriesModule' },
+  { path: 'slides', loadChildren: './pages/quiz-slides/quiz-slides.module#QuizSlidesModule' },
   { path: '**', component: ErrorComponent }
 ];
 

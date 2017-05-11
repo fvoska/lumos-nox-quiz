@@ -1,12 +1,12 @@
 <md-toolbar color="primary">
-  <span>{{ title }}</span>
+  <a routerLink="/" routerLinkActive="active">{{ title }}</a>
 
   <!-- This fills the remaining space of the current row -->
   <span class="example-fill-remaining-space"></span>
 
-  <span>
-    <a routerLink="/" routerLinkActive="active">Home</a>
-    <a routerLink="quiz-categories" routerLinkActive="active">Jeopardy</a>
+  <span class="nav-links">
+    <a routerLink="slides" routerLinkActive="active">Slides</a>
+    <a routerLink="jeopardy" routerLinkActive="active">Jeopardy</a>
   </span>
 </md-toolbar>
 

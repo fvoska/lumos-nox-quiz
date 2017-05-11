@@ -1,3 +1,4 @@
+import { routerTransition } from 'app/router.animations';
 import { Component, OnInit, trigger, transition, style, animate, HostListener } from '@angular/core';
 
 import { Question } from 'app/interfaces/question.interface';
@@ -10,7 +11,9 @@ import { BodyBackgroundChangerService } from 'app/services/body-background-chang
   selector: 'quiz-categories',
   templateUrl: './quiz-categories.component.html',
   styleUrls: ['./quiz-categories.component.scss'],
+  host: {'[@routerTransition]': ''},
   animations: [
+    routerTransition(),
     trigger(
       'popupAnimation',
       [
