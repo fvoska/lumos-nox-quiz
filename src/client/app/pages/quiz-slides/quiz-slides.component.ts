@@ -42,10 +42,11 @@ export class QuizSlidesComponent implements OnInit {
     let nextQuestion: number = -1;
     if (ev.keyCode === KeyCodes.ARROW_LEFT) {
       nextQuestion = Math.max(this.currentQuestion - 1, -1);
+      this.changeQuestion(nextQuestion);
     } else if (ev.keyCode === KeyCodes.ARROW_RIGHT) {
       nextQuestion = Math.min(this.currentQuestion + 1, this.questions.length);
+      this.changeQuestion(nextQuestion);
     }
-    this.changeQuestion(nextQuestion);
   }
 
   private changeQuestion(questionNumber: number): void {
