@@ -1,213 +1,178 @@
 {
   "questions": [{
     "id": "1",
-    "label": "100",
+    "label": "1",
     "category": "1",
-    "text": "S čim se Wash voli igrati?",
-    "answer": "S dinosaurima.",
+    "text": "Kak se zove kapetan Serenity?",
+    "answer": "Captain Malcolm Reynolds",
     "done": false
   }, {
     "id": "2",
-    "label": "200",
+    "label": "2",
     "category": "1",
-    "text": "Koji je bil prvi Zoein dojam o Washu?",
-    "answer": "“Just somethin' about him bothers me.”",
+    "text": "Kaj Jayne dobije poštom od mame?",
+    "answer": "A very cunning hat",
     "done": false
   }, {
     "id": "3",
-    "label": "300",
+    "label": "3",
     "category": "1",
-    "text": "Koji je Jayneov najdraži gun?",
-    "answer": "Vera",
+    "text": "S čim Shepard Book plati putovanje, kaj tolko oduševi Kaylee?",
+    "answer": "S jagodama",
     "done": false
   }, {
     "id": "4",
-    "label": "400",
+    "label": "4",
     "category": "1",
-    "text": "Na koji dan svake godine Mal započne bar brawl?",
-    "answer": "Unification day",
+    "text": "Koji je glavni izvozni priozvod Jayne’s Towna?",
+    "answer": "Mud, clay really",
     "done": false
   }, {
     "id": "5",
-    "label": "500",
+    "label": "5",
     "category": "1",
-    "text": "Puno ime mehaničarke na Serenity?",
-    "answer": "Kaywinnit Lee Frye",
+    "text": "Kak se zove manevar koji Wash izvede u bijegu od Rivera?",
+    "answer": "Crazy Ivan",
     "done": false
   }, {
     "id": "6",
-    "label": "100",
-    "category": "2",
-    "text": "Na kojem planetu je Badger?",
-    "answer": "Persephone",
+    "label": "6",
+    "category": "1",
+    "text": "Tko je pobijedio u ratu?",
+    "answer": "Alliance",
     "done": false
   }, {
     "id": "7",
-    "label": "200",
-    "category": "2",
-    "text": "Koja sve imena our Mrs. Reynolds znamo?",
-    "answer": "Saffron, Bridget i Yolanda",
+    "label": "7",
+    "category": "1",
+    "text": "Kojim se zanimanjem bavi Inara?",
+    "answer": "Companion",
     "done": false
   }, {
     "id": "8",
-    "label": "300",
-    "category": "2",
-    "text": "Na kojem se mjesecu nalazi Patience?",
-    "answer": "Whitefall",
+    "label": "8",
+    "category": "1",
+    "text": "Kolko putnika se ukrca na Serenity u prvoj epizodi?",
+    "answer": "4",
     "done": false
   }, {
     "id": "9",
-    "label": "400",
-    "category": "2",
-    "text": "Čiju filozofiju prati Niska?",
-    "answer": "Shan Yu",
+    "label": "9",
+    "category": "1",
+    "text": "U epizodi Ariel, gde najdu vozilo hitne pomoći?",
+    "answer": "Na smetlištu",
     "done": false
   }, {
     "id": "10",
-    "label": "500",
-    "category": "2",
-    "text": "Kak se zove bounty hunter koji je došel na Serenity?",
-    "answer": "Jubal Early",
+    "label": "10",
+    "category": "1",
+    "text": "Kak se River ukrca na Serenity?",
+    "answer": "U crateu",
     "done": false
   }, {
     "id": "11",
-    "label": "100",
-    "category": "3",
-    "text": "Po čemu je neobična žena Mr. Universea, Lenore?",
-    "answer": "Sanja električne ovce",
+    "label": "11",
+    "category": "1",
+    "text": "Koji član crewa izda Simona i River?",
+    "answer": "Jayne",
     "done": false
   }, {
     "id": "12",
-    "label": "200",
-    "category": "3",
-    "text": "Kaj Monty napravi kao dokaz ljubavi za svoju ženu?",
-    "answer": "Obrije bradu",
+    "label": "12",
+    "category": "1",
+    "text": "Za koji su se pokret borili Mal i Zoë?",
+    "answer": "Independence",
     "done": false
   }, {
     "id": "13",
-    "label": "300",
-    "category": "3",
-    "text": "Kak se zove vlasnica bordela kojoj crew dolazi u pomoć?",
-    "answer": "Nandi",
+    "label": "13",
+    "category": "1",
+    "text": "U koji dio tijela je ranjena Kaylee u pilot epizodi?",
+    "answer": "Trbuh",
     "done": false
   }, {
     "id": "14",
-    "label": "400",
-    "category": "3",
-    "text": "Na koji način i zakaj Tracey traži pomoć od Mala i Zoe?",
-    "answer": "Pošta, organi",
+    "label": "14",
+    "category": "1",
+    "text": "Koji je čin Mal imao u ratu?",
+    "answer": "Sergeant",
     "done": false
   }, {
     "id": "15",
-    "label": "500",
-    "category": "3",
-    "text": "Kak se zovu braća blizanci s kojima crew obavlja job?",
-    "answer": "Mingo & Fanty",
+    "label": "15",
+    "category": "1",
+    "text": "Kak Shepherd Book bira svoje putovanje?",
+    "answer": "Gleda brodove, ne destinacije",
     "done": false
   }, {
     "id": "16",
-    "label": "100",
-    "category": "4",
-    "text": "Koje je pravo ime Jaynestowna?",
-    "answer": "Canton",
+    "label": "16",
+    "category": "1",
+    "text": "Koje je puno ime pilota Serenity?",
+    "answer": "Hoban Washburne",
     "done": false
   }, {
     "id": "17",
-    "label": "200",
-    "category": "4",
-    "text": "U kojoj epizodi saznamo najviše o okupljanju crewa?",
-    "answer": "Out of Gas",
+    "label": "17",
+    "category": "1",
+    "text": "Koji superpower ima River?",
+    "answer": "Mindreading",
     "done": false
   }, {
     "id": "18",
-    "label": "300",
-    "category": "4",
-    "text": "Čega se Simon boji u epizodi Bushwacked?",
-    "answer": "”Well, I suppose it's just the thought of a little mylar and glass being the only thing seperating a person from nothing.”",
+    "label": "18",
+    "category": "1",
+    "text": "Kak se zove sumnjiva korporacija u ‘Verseu?",
+    "answer": "Blue Sun",
     "done": false
   }, {
     "id": "19",
-    "label": "400",
-    "category": "4",
-    "text": "U kojoj epizodi River napadne Jaynea?",
-    "answer": "Ariel",
+    "label": "19",
+    "category": "1",
+    "text": "Ko je poslodavac crewa kad pljačkaju bolnicu na Arielu?",
+    "answer": "Simon",
     "done": false
   }, {
     "id": "20",
-    "label": "500",
-    "category": "4",
-    "text": "U kojoj epizodi Inara češlja Kaylee?",
-    "answer": "Train Job",
+    "label": "20",
+    "category": "1",
+    "text": "Mal dobi nadimak Captain Tightpants. Tko mu ga nadjene?",
+    "answer": "Kaylee",
     "done": false
   }, {
     "id": "21",
-    "label": "100",
-    "category": "5",
-    "text": "Kaj Jayne veli kad vidi da Inara ima ženskog klijenta?",
-    "answer": "”I’ll be in my bunk.”",
+    "label": "21",
+    "category": "1",
+    "text": "Za kaj seljani optužuju River u epizodi Safe?",
+    "answer": "Da je vještica",
     "done": false
   }, {
     "id": "22",
-    "label": "200",
-    "category": "5",
-    "text": "“First rule of battle, little one, don’t ever let them know where you are”<div class=\"qsmall\">Iz koje epizode je ovaj citat?</div>",
-    "answer": "The Message",
+    "label": "22",
+    "category": "1",
+    "text": "Koga muči Niska u epizodi War Stories?",
+    "answer": "Mala i Washa",
     "done": false
   }, {
     "id": "23",
-    "label": "300",
-    "category": "5",
-    "text": "M: “We’re still flying.”<br>S: “That’s not much.”<br>M: “That’s enough.”",
-    "answer": "Serenity",
+    "label": "23",
+    "category": "1",
+    "text": "Koji neobični cargo crew pokupi na kraju epizode Shindig?",
+    "answer": "Krave",
     "done": false
   }, {
     "id": "24",
-    "label": "400",
-    "category": "5",
-    "text": "“Well, hey there, Jayne. Thought I’d make you watch while I butchered me one of your boys.”<div class=\"qsmall\">Čiji je ovo citat?</div>",
-    "answer": "Stitch Hessian",
+    "label": "24",
+    "category": "1",
+    "text": "Na kojem planetu je Simon radil prije nego je krenul u potragu za River?",
+    "answer": "Na Osirisu",
     "done": false
   }, {
     "id": "25",
-    "label": "500",
-    "category": "5",
-    "text": "U epizodi Ariel, koju frazu Jayne mora naučiti?",
-    "answer": "“We applied the cortical electrodes but were unable to get a neural reaction from either patient.”",
-    "done": false
-  }, {
-    "id": "26",
-    "label": "100",
-    "category": "6",
-    "text": "Koje su bile dvije strane u ratu?",
-    "answer": "Alliance i Independents",
-    "done": false
-  }, {
-    "id": "27",
-    "label": "200",
-    "category": "6",
-    "text": "Koja dva jezika se koriste in the ‘Verse?",
-    "answer": "Engleski i mandarinski",
-    "done": false
-  }, {
-    "id": "28",
-    "label": "300",
-    "category": "6",
-    "text": "Kaj je Miranda?",
-    "answer": "Planet na kojem nastanu Reaveri",
-    "done": false
-  }, {
-    "id": "29",
-    "label": "400",
-    "category": "6",
-    "text": "Navedi tri planeta u Alliance teritoriju.",
-    "answer": "Ariel, Osiris, Persephone, Beaumonde, Sihnon, Londinium…",
-    "done": false
-  }, {
-    "id": "30",
-    "label": "500",
-    "category": "6",
-    "text": "Koje dvije valute spominje crew?",
-    "answer": "Credits i platinum",
+    "label": "25",
+    "category": "1",
+    "text": "Gdje se Inara školovala za companiona?",
+    "answer": "Na Shinonu",
     "done": false
   }]
 }

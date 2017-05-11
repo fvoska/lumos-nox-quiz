@@ -1,1 +1,2 @@
+<div class="question-number" [@revealAnimation]="question">{{ question?.id }}</div>
 <div class="question" [@revealAnimation]="question" *ngIf="question" [innerHTML]="question?.text">Question</div>
