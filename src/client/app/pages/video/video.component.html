@@ -1,0 +1,4 @@
+<video *ngIf="video" [@revealAnimation]="video" width="auto" height="100%" controls onclick="this.paused ? this.play() : this.pause();">
+  <source src="assets/videos/{{ video }}.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>

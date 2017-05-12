@@ -20,8 +20,16 @@ md-toolbar {
 .nav-links {
   a {
     margin-right: 1em;
+
     &.active {
       text-decoration: underline;
+      color: $fireflyAccent;
+    }
+
+    &.video-link {
+      display: inline-block;
+      position: relative;
+      top: 4px;
     }
   }
 }

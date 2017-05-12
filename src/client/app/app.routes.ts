@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'jeopardy', loadChildren: './pages/quiz-categories/quiz-categories.module#QuizCategoriesModule' },
   { path: 'slides', loadChildren: './pages/quiz-slides/quiz-slides.module#QuizSlidesModule' },
+  { path: 'video', loadChildren: './pages/video/video.module#VideoModule' },
   { path: '**', component: ErrorComponent }
 ];
 
