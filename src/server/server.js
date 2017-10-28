@@ -20,13 +20,17 @@ const forceSSL = function() {
 // middleware
 app.use(forceSSL());
 
-const basicAuth = require('express-basic-auth');
- 
-app.use(basicAuth({
-  users: {lumosnox: 'sherbetlemon'},
-  challenge: true,
-  realm: 'LumosNoxFireflyQuiz'
-}));
+const useAuth = false;
+
+if (useAuth) {
+  const basicAuth = require('express-basic-auth');
+  
+  app.use(basicAuth({
+    users: {lumosnox: 'sherbetlemon'},
+    challenge: true,
+    realm: 'LumosNoxFireflyQuiz'
+  }));
+}
 
 // Fix path
 const path = require('path');
